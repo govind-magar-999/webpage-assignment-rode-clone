@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://cdn.shopify.com/static/fonts/ShopifySans--medium.woff2">
+    <link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://cdn.shopify.com/static/fonts/ShopifySans--bold.woff2">
+    <link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://cdn.shopify.com/static/fonts/ShopifySans--extrabold.woff2">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f285d89df.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rode landing page</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: {'max': '599px'},
+            md: "600px",
+            lg: "1024px",
+            xl: "1440px",
+          },
+          extend: {
+            colors: {
+              learn_more: '#dc1e34',
+              cta_bg_black: '#000',
+              cta_text_brown: '#ad9970',
+              text_grey_section_2: '#ffffff80',
+              text_grey_section_3: '#00000080',
+              background_cards: '#f8f9fa'
+            },
+          },
+          fontFamily: {
+            sans:    "ShopifySans, Helvetica, Arial, Lucida Grande, sans-serif;"
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans">
+    <!-- Navbar -->
+    <nav>
+      <div class="flex flex-wrap justify-between px-10 py-3">
+        <div class="flex flex-wrap">
+          <img class="mx-2" src="./location-pin.svg" alt="">
+          EN
+          <i class="mx-2 fa-solid fa-sort-down"></i>
+        </div>
+        <div class="flex flex-wrap">
+          <a href="#"><img class="w-16 mx-4" src="./rodex-nav-off.svg" alt=""></a>
+          <a href="#"><img class="w-4" src="./user.svg" alt=""></a>
+        </div>
+      </div>
+      <hr>
+      <div class="flex flex-wrap justify-between p-10">
+          <div class="w-48 mx-2 md:mx-0">
+            <a href="#">
+              <img  class="w-28" src="./rode-nav-black.svg" alt="">
+            </a>
+          </div>
+          <div class="flex flex-wrap">
+            <a href="#"><div class="text-xl font-normal mx-2 lg:mx-8 my-5 lg:my-0">PRODUCTS</div></a>
+            <a href="#"><div class="text-xl font-normal mx-2 lg:mx-8 my-5 lg:my-0">USER GUIDES</div></a>
+            <a href="#"><div class="text-xl font-normal mx-2 lg:mx-8 my-5 lg:my-0">SOLUTIONS</div></a>
+            <a href="#"><div class="text-xl font-normal mx-2 lg:mx-8 my-5 lg:my-0">APPAREL</div></a>
+            <a href="#"><div class="text-xl font-normal mx-2 lg:mx-8 my-5 lg:my-0">SUPPORT</div></a>
+          </div>
+          <div class="w-48 mx-0">
+            <a href="#"><img class="text-right" src="./search-icon.svg" alt=""></a>
+          </div>
+      </div>
+    </nav>
+    <!-- Hero banner -->
+    <div class="bg-[url('./hero-banner.jpg')] text-center bg-center bg-no-repeat w-100 h-auto py-40">
+      <img class="w-100 md:w-1/2 mx-auto px-4 md:px-0" src="./rodex-hero-banner-text.svg" alt="">
+      <button class="text-learn_more text-xl bg-cta_bg_black bg-center rounded-full font-bold px-5 py-3 my-5">LEARN MORE</button>
+    </div>
+    <div class="bg-[url('./overview-image.jpg')] text-center md:text-right bg-center bg-no-repeat w-100 h-auto py-40">
+      <div class="flex justify-center md:justify-end">
+        <div class="w-100 md:w-1/2 flex flex-col items-center justify-end">
+          <div class="text-white text-center text-xl px-8">
+            <img class="w-100 px-4 md:px-0" src="./caster-pro-image.svg" alt="">
+            <h3 class="text-white text-2xl my-5">The Revolution Is Here</h3>
+            <p class="text-text_grey_section_2">
+              The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers, podcasters, musicians, and creators. Take your content to the next level.
+            </p>
+          </div>
+          <div>
+            <button class="text-cta_text_brown text-xl bg-cta_bg_black bg-center rounded-full font-bold px-5 py-3 my-5">LEARN MORE ></button>
+            <button class="hover:bg-white hover:text-cta_text_brown hover: border-[2px] hover:border-cta_text_brown bg-cta_text_brown text-xl text-white bg-center rounded-full font-bold px-8 py-3 my-5 mt-10">BUY NOW</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[url('./section-04.jpg')] text-center md:text-right bg-center bg-no-repeat w-100 h-auto py-40">
+      <div class="flex justify-center md:justify-end">
+        <div class="w-100 md:w-1/2 flex flex-col items-center justify-end">
+          <div class="text-center text-xl px-8">
+            <img class="w-100 px-4 md:px-0" src="./nt-usb.svg" alt="">
+            <h3 class="text-3xl my-5">Studio-Quality Recording, Made Simple</h3>
+            <p class="text-text_grey_section_3">
+              The NT-USB is a studio-quality USB condenser microphone that offers impeccable audio, elegant looks and premium features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.
+            </p>
+          </div>
+          <div>
+            <button class="text-cta_text_brown text-xl bg-center rounded-full font-bold px-5 py-3 my-5">LEARN MORE ></button>
+            <button class="hover:bg-white hover:text-cta_text_brown hover: border-[2px] hover:border-cta_text_brown bg-cta_text_brown text-xl text-white bg-center rounded-full font-bold px-8 py-3 my-5 mt-10">BUY NOW</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-text_grey_section_3 my-5">
+        Explore The RØDE Range
+      </h2>
+    </div>
+    <div class="mx-0 md:mx-10">
+      <div class="w-100 filter text-center hover:filter-dark bg-[url('./microphone-png.png')] bg-center bg-no-repeat bg-contain py-12 md:py-24 lg:py-40">
+        <img src="./microphones-svg.svg" alt="">
+      </div>
+      <div class="w-100 filter text-center hover:filter-dark bg-[url('./interface-png.jpg')] bg-center bg-no-repeat bg-contain py-12 md:py-24 lg:py-40">
+        <img src="./interface-icon.svg" alt="">
+      </div>
+      <div class="w-100 filter text-center hover:filter-dark bg-[url('./software-png.png')] bg-center bg-no-repeat bg-contain py-12 md:py-24 lg:py-40">
+        <img src="./software-icon.svg" alt="">
+      </div>
+      <div class="w-100 filter text-center hover:filter-dark bg-[url('./accessories-png.png')] bg-center bg-no-repeat bg-contain py-12 md:py-24 lg:py-40">
+        <img src="./acccessories.svg" alt="">
+      </div>
+    </div>
+    <!-- Blog section -->
+    <div class="text-center">
+      <a href="#">
+        <h2 class="text-4xl font-bold text-cta_text_brown my-5">
+          Latest From The RØDE Blog
+        </h2>
+      </a>
+    </div>
+    <div class="flex flex-wrap items-stretch mx-10 bg-background_cards my-28">
+      <div class="flex text-center flex-col w-100 md:w-1/2 mx-0 md:px-8">
+        <h3 class="text-3xl p-0 my-5 md:p-8">Introducing RØDE’s Streaming and Gaming Division: RØDE X</h3>
+        <img src="./tripod.jpg" alt="">
+        <div class="">
+          <p class="text-xl my-10 md:px-10">
+            RØDE X launches with three new products purpose-built for streamers and gamers – UNIFY virtual mixing software, and the XDM-100 and XCM-50 USB microphones.
+          </p>
+          <button class="hover:bg-white hover:text-cta_text_brown hover: border-[2px] hover:border-cta_text_brown bg-cta_text_brown text-xl text-white bg-center rounded-full font-bold px-8 py-3 my-5 mt-10">BUY NOW</button>  
+        </div>
+      </div>
+      <div class="flex text-center flex-col w-100 md:w-1/2 mx-0 md:px-8">
+        <h3 class="text-3xl p-0 my-5 md:p-8">XLR vs USB Microphones: Which is Best for You?</h3>
+        <img src="./recording-room.jpg" alt="">
+        <div class="">
+          <p class="text-xl my-10 md:px-10">
+            We explore the differences between XLR and USB microphones, the advantages of each and which type is best suited to your needs.
+          </p>
+          <button class="hover:bg-white hover:text-cta_text_brown hover: border-[2px] hover:border-cta_text_brown bg-cta_text_brown text-xl text-white bg-center rounded-full font-bold px-8 py-3 my-5 mt-10">BUY NOW</button>  
+        </div>
+      </div>
+      <div class="flex text-center flex-col w-100 md:w-1/2 mx-0 md:px-8 bg-">
+        <h3 class="text-3xl p-0 my-5 md:p-8">XLR vs USB Microphones: Which is Best for You?</h3>
+        <img src="./male-singer.jpeg" alt="">
+        <div class="">
+          <p class="text-xl my-10 md:px-10">
+            We explore the differences between XLR and USB microphones, the advantages of each and which type is best suited to your needs.
+          </p>
+          <button class="hover:bg-white hover:text-cta_text_brown hover: border-[2px] hover:border-cta_text_brown bg-cta_text_brown text-xl text-white bg-center rounded-full font-bold px-8 py-3 my-5 mt-10">BUY NOW</button>  
+        </div>
+      </div>
+      <div class="flex text-center flex-col w-100 md:w-1/2 mx-0 md:px-8">
+        <h3 class="text-3xl p-0 my-5 md:p-8">XLR vs USB Microphones: Which is Best for You?</h3>
+        <img src="./female-singer.jpg" alt="">
+        <div class="">
+          <p class="text-xl my-10 md:px-10">
+            We explore the differences between XLR and USB microphones, the advantages of each and which type is best suited to your needs.
+          </p>
+          <button class="hover:bg-white hover:text-cta_text_brown hover: border-[2px] hover:border-cta_text_brown bg-cta_text_brown text-xl text-white bg-center rounded-full font-bold px-8 py-3 my-5 mt-10">BUY NOW</button>  
+        </div>
+      </div>
+    </div>
+    <!-- Footer  -->
+    <hr>
+    <footer class="flex flex-wrap justify-start md:justify-between py-14 mx-10 md:mx-0">
+      <div class="md:mx-8">
+        <img src="./rode-dot.svg" alt="">
+      </div>
+      <div class="flex flex-col">
+        <h3 class="text-xl font-bold">Products</h3>
+        <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+          Microphones
+        </a>
+        <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+          Headphones
+        </a>
+        <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+          Interfaces and Mixers
+        </a>
+        <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+          Accessories
+        </a>
+        <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+          Software
+        </a>
+        <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+          Apparel
+        </a>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="text-xl font-bold">Support</h3>
+        <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+          Contact Rode
+        </a>
+        <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+          Service center
+        </a>
+        <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+          Warranty
+        </a>
+        <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+          Where to buy
+        </a>
+      </div>
+      <div class="flex flex-col">
+        <div class="my-4 flex flex-col">
+          <h3 class="text-xl font-bold">Company</h3>
+          <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+            About Rode
+          </a>
+          <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+            News and info
+          </a>
+          <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+            Job opportunities
+          </a>
+        </div>
+        <div class="my-4 flex flex-col">
+          <h3 class="text-xl font-bold">Account</h3>
+          <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+            manage your account
+          </a>
+          <a class="text-xl font-medium m-2 hover:text-cta_text_brown text-text_grey_section_3" href="#">
+            Create account
+          </a>
+        </div>
+      </div>
+      <div class="text-center md:text-right md:m-8 lg:mx-8">
+        <h2 class="text-4xl font-bold">Subscribe to our latest news and offers</h2>
+        <button class="hover:bg-white hover:text-cta_text_brown hover: border-[2px] hover:border-cta_text_brown bg-cta_text_brown text-xl text-white bg-center rounded-full font-bold px-8 py-3 my-5 mt-10">Sign up</button>  
+      </div>
+    </footer>
+    <hr>
+      <div class="flex flex-wrap justify-between py-12 px-10">
+        <div>© 2022 RØDE All Rights Reserved.</div>
+        <div><a class="pr-0 md:pr-8" href="#">Privacy Policy</a><span>|</span><a class="pl-0 md:pl-8" href="#">Terms & Conditions</a></div>
+        <div class="flex flex-wrap my-10 lg:my-0">
+          <a href="#"><img class="w-6 h-6 mx-5" src="./fb.svg" alt=""></a>
+          <a href="#"><img class="w-6 h-6 mx-5" src="./twitter.svg" alt=""></a>
+          <a href="#"><img class="w-6 h-6 mx-5" src="./insta.svg" alt=""></a>
+          <a href="#"><img class="w-6 h-6 mx-5" src="./yt.svg" alt=""></a>
+         </div>
+      </div>
+  </body>
+</html>
